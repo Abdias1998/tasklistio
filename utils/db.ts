@@ -13,7 +13,7 @@ export const connectToDB = async () => {
     try {
         await mongoose
             .connect(
-                process.env.MONGODB_URI!, {
+                "mongodb+srv://lagraceparle98:jesustaime@cluster0.qiti5aj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
                     dbName: "tasks",
                     useNewUrlParser: true,
                     useUnifiedTopology: true,
